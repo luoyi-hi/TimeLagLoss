@@ -206,3 +206,41 @@ bash scripts/long_term_forecast/Weather_script/TimeMixer.sh
 
 ---
 
+## 4. Full results
+
+### 4.1 Long-term forecasting results  
+
+<p align="center"><b>Table&nbsp;4</b> Long-term forecasting results on ETTh1 dataset.</p>
+
+![Table 4](./src/ETTh1.png)
+
+<p align="center"><b>Table&nbsp;5</b> Long-term forecasting results on ETTh2 dataset.</p>
+
+![Table 5](./src/ETTh2.png)
+
+<p align="center"><b>Table&nbsp;6</b> Long-term forecasting results on ETTm1 dataset.</p>
+
+![Table 6](./src/ETTm1.png)
+
+<p align="center"><b>Table&nbsp;7</b> Long-term forecasting results on ETTm2 dataset.</p>
+
+![Table 7](./src/ETTm2.png)
+
+<p align="center"><b>Table&nbsp;8</b> Long-term forecasting results on Weather dataset.</p>
+
+![Table 8](./src/Weather.png)
+
+<p align="center"><b>Table&nbsp;9</b> Long-term forecasting results on Electricity dataset.</p>
+
+![Table 9](./src/Electricity.png)
+
+<p align="center"><b>Figure&nbsp;3</b> Impact of hyperparameters on all model’s performance(MAE).</p>
+
+![Figure&nbsp;3](./src/Figure3.png)
+
+<p align="center"><b>Figure&nbsp;4</b> Performance comparison in terms of MAE.</p>
+
+![Figure&nbsp;4](./src/Figure4.png)
+
+---
+
