@@ -236,11 +236,11 @@ bash scripts/long_term_forecast/Weather_script/TimeMixer.sh
 
 <p align="center"><b>Figure&nbsp;3</b> Impact of hyperparameters on all model’s performance(MAE).</p>
 
-![Figure&nbsp;3](./src/Figure3.png)
+![Figure&nbsp;3](./src/figure3.png)
 
 <p align="center"><b>Figure&nbsp;4</b> Performance comparison in terms of MAE.</p>
 
-![Figure&nbsp;4](./src/Figure4.png)
+![Figure&nbsp;4](./src/figure4.png)
 
 ---
 
