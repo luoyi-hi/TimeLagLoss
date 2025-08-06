@@ -99,15 +99,10 @@ Dataset statistics are summarised in **Table&nbsp;1**.
 We have selected ten representative backbones regarding time series forecasting models, encompassing diverse design principles and perspectives:
 
 - **iTransformer(ICLR, 2024)**: Models different variables separately using attention mechanisms and feedforward networks to capture correlations between variables and dependencies within each variable.
-- **PatchTST(ICLR, 2023)**: Segments time series into subseries-level patches as input tokens to the Transformer and shares the same embedding and Transformer weights across all series in each channel.
 - **NSTransformer(Stationary)(NeurIPS, 2022)**: Consists of Series Stationarization and De-stationary Attention modules to improve the predictive performance of Transformers and their variants on non-stationary time series data.
-- **Autoformer(NeurIPS, 2021)**: Based on a deep decomposition architecture and self-correlation mechanism, improving long-term prediction efficiency through progressive decomposition and sequence-level connections.
 - **SOFTS(NeurIPS, 2024)**: An efficient MLP-based model with a novel STAR module. Unlike traditional distributed structures, STAR uses a centralized strategy to improve efficiency and reduce reliance on channel quality.
 - **CycleNet(NeurIPS, 2024)**: Introduces Residual Cycle Forecasting (RCF), a plug-and-play block that first learns recurrent cycles to explicitly model periodic patterns and then forecasts the residual component with a lightweight Linear layer or shallow MLP.
-- **Leddam(ICML, 2024)**: Introduces a learnable decomposition strategy to capture dynamic trend information more reasonably and a dual attention module to capture inter-series dependencies and intra-series variations simultaneously.
 - **TimeMixer(ICLR, 2024)**: A fully MLP-based architecture with PDM and FMM blocks to fully utilize disentangled multiscale series in both past extraction and future prediction phases.
-- **DLinear(AAAI, 2023)**: Decomposes the time series into trend and residual sequences, and models these two sequences separately using two single-layer linear networks for prediction.
-- **LightTS(2023)**: Compresses large ensembles into lightweight models while ensuring competitive accuracy. It proposes adaptive ensemble distillation and identifies Pareto optimal settings regarding model accuracy and size.
 
 ### 2.3 Hyper‑Parameters  
 
@@ -147,48 +142,18 @@ pip install -r requirements.txt
 Example scripts (full list in `./scripts/`):
 
 ```bash
-# Autoformer on ETT datasets
-bash scripts/long_term_forecast/ETT_script/Autoformer.sh
-# Autoformer on Electricity dataset
-bash scripts/long_term_forecast/ECL_script/Autoformer.sh
-# Autoformer on Weather dataset
-bash scripts/long_term_forecast/Weather_script/Autoformer.sh
-# DLinear on ETT datasets
-bash scripts/long_term_forecast/ETT_script/DLinear.sh
-# DLinear on Electricity dataset
-bash scripts/long_term_forecast/ECL_script/DLinear.sh
-# DLinear on Weather dataset
-bash scripts/long_term_forecast/Weather_script/DLinear.sh
 # iTransformer on ETT datasets
 bash scripts/long_term_forecast/ETT_script/iTransformer.sh
 # iTransformer on Electricity dataset
 bash scripts/long_term_forecast/ECL_script/iTransformer.sh
 # iTransformer on Weather dataset
 bash scripts/long_term_forecast/Weather_script/iTransformer.sh
-# Leddam on ETT datasets
-bash scripts/long_term_forecast/ETT_script/Leddam.sh
-# Leddam on Electricity dataset
-bash scripts/long_term_forecast/ECL_script/Leddam.sh
-# Leddam on Weather dataset
-bash scripts/long_term_forecast/Weather_script/Leddam.sh
-# LightTS on ETT datasets
-bash scripts/long_term_forecast/ETT_script/LightTS.sh
-# LightTS on Electricity dataset
-bash scripts/long_term_forecast/ECL_script/LightTS.sh
-# LightTS on Weather dataset
-bash scripts/long_term_forecast/Weather_script/LightTS.sh
 # NSTransformer on ETT datasets
 bash scripts/long_term_forecast/ETT_script/Nonstationary_Transformer.sh
 # NSTransformer on Electricity dataset
 bash scripts/long_term_forecast/ECL_script/Nonstationary_Transformer.sh
 # NSTransformer on Weather dataset
 bash scripts/long_term_forecast/Weather_script/Nonstationary_Transformer.sh
-# PatchTST on ETT datasets
-bash scripts/long_term_forecast/ETT_script/PatchTST.sh
-# PatchTST on Electricity dataset
-bash scripts/long_term_forecast/ECL_script/PatchTST.sh
-# PatchTST on Weather dataset
-bash scripts/long_term_forecast/Weather_script/PatchTST.sh
 # SOFTS on ETT datasets
 bash scripts/long_term_forecast/ETT_script/SOFTS.sh
 # SOFTS on Electricity dataset
