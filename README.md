@@ -70,7 +70,7 @@ Figure 2 shows an MSE metrics comparison of 10 state-of-the-art time series fore
 
 ![Figure 2](./src/figure2.png)
 
-<p align="center"><b>Figure&nbsp;2</b> Comparison of model performance (Metric: MSE) with different loss guides on ETTh1.</p>
+<p align="center"><b>Figure&nbsp;2</b> erformance comparison in terms of MSE. Each radar chart illustrates the forecasting performance of 5 backbones under 6 loss functions. The displayed performance is the average over four prediction horizons: {96, 192, 336, 720}. </p>
 
 
 ### 2.1 Datasets
