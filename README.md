@@ -64,9 +64,9 @@ class TimeLagLoss(nn.Module):
 
 ## 2. Experimental Setting
 
-The models and datasets used for the validation experiments are derived from the [Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library). The appendix reports details of 1680 experimental results covering 4 prediction horizons, 10 models, 7 loss functions, and 6 datasets.
+The models and datasets used for the validation experiments are derived from the [Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library). The appendix reports details of 720 experimental results covering 4 prediction horizons, 5 models, 6 loss functions, and 6 datasets.
 
-Figure 2 shows an MSE metrics comparison of 10 state-of-the-art time series forecasting models with 7 different loss functions on ETTh1. **Figure 2 shows that the model guided by LagLoss consistently achieves lower MSE values in most models.**
+Figure 2 shows an MSE metrics comparison of 5 state-of-the-art time series forecasting models with 7 different loss functions. **Figure 2 shows that the model guided by LagLoss consistently achieves lower MSE values in most models.**
 
 ![Figure 2](./src/figure2.png)
 
