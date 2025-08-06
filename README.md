@@ -66,11 +66,11 @@ class TimeLagLoss(nn.Module):
 
 The models and datasets used for the validation experiments are derived from the [Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library). The appendix reports details of 720 experimental results covering 4 prediction horizons, 5 models, 6 loss functions, and 6 datasets.
 
-Figure 2 shows an MSE metrics comparison of 5 state-of-the-art time series forecasting models with 7 different loss functions. **Figure 2 shows that the model guided by LagLoss consistently achieves lower MSE values in most models.**
+**Figure 2 shows that the model guided by LagLoss consistently achieves lower MSE values in most models.**
 
 ![Figure 2](./src/figure2.png)
 
-<p align="center"><b>Figure&nbsp;2</b> erformance comparison in terms of MSE. Each radar chart illustrates the forecasting performance of 5 backbones under 6 loss functions. The displayed performance is the average over four prediction horizons: {96, 192, 336, 720}. </p>
+<p align="center"><b>Figure&nbsp;2</b> Performance comparison in terms of MSE. Each radar chart illustrates the forecasting performance of 5 backbones under 6 loss functions. The displayed performance is the average over four prediction horizons: {96, 192, 336, 720}. </p>
 
 
 ### 2.1 Datasets
@@ -114,7 +114,6 @@ Table 2 presents the hyperparameters (batch size, learning rate, number of epoch
 <p align="center"><b>Table&nbsp;2</b> Hyperparameter configuration.</p>
 
 ![Table 2](./src/table2.png)
-![Table 22](./src/table22.png)
 
 
 ### 2.4 Loss Function
@@ -199,13 +198,9 @@ bash scripts/long_term_forecast/Weather_script/TimeMixer.sh
 
 ![Table 9](./src/Electricity.png)
 
-<p align="center"><b>Figure&nbsp;3</b> Impact of hyperparameters on all model’s performance(MAE).</p>
+<p align="center"><b>Figure&nbsp;3</b> Impact of hyperparameter 𝛼 on performance.</p>
 
 ![Figure&nbsp;3](./src/figure3.png)
-
-<p align="center"><b>Figure&nbsp;4</b> Performance comparison in terms of MAE.</p>
-
-![Figure&nbsp;4](./src/figure4.png)
 
 ---
 
