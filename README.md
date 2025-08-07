@@ -66,7 +66,7 @@ class TimeLagLoss(nn.Module):
 
 The models and datasets used for the validation experiments are derived from the [Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library). The appendix reports details of 720 experimental results covering 4 prediction horizons, 5 models, 6 loss functions, and 6 datasets.
 
-<p align="center"><b>Table&nbsp;1</b> NSTransformer’s performance (MSE) on different loss functions in combination with LagLoss (mixed ratio is 1:1). </p>
+<p align="center"><b>Table&nbsp;1</b> NSTransformer’s performance (MSE) on different loss functions in combination with LagLoss. </p>
 
 ![Table 1](./src/table1.png)
 
