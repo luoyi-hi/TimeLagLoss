@@ -86,7 +86,7 @@ We selected six real-world time series datasets, including ETTh1, ETTh2, ETTm1, 
 
 #### 2.1.2 Statistics  
 
-Dataset statistics are summarised in **Table&nbsp;1**.
+Dataset statistics are summarised in **Table&nbsp;2**.
 
 <p align="center"><b>Table&nbsp;2</b> Statistics of datasets.</p>
 
@@ -104,7 +104,7 @@ We have selected ten representative backbones regarding time series forecasting 
 
 ### 2.3 Hyper‑Parameters  
 
-Table 2 presents the hyperparameters (batch size, learning rate, number of epochs, model dimensions, feed-forward dimensions, and number of encoder layers) used for 10 time series forecasting models across all datasets, showing dataset- and model-specific configurations for optimization. In particular, **ETT*** refers to the four subsets: ETTh1, ETTh2, ETTm1, and ETTm2.  
+Table 3 presents the hyperparameters (batch size, learning rate, number of epochs, model dimensions, feed-forward dimensions, and number of encoder layers) used for 10 time series forecasting models across all datasets, showing dataset- and model-specific configurations for optimization. In particular, **ETT*** refers to the four subsets: ETTh1, ETTh2, ETTm1, and ETTm2.  
 **For detailed parameter settings, please refer to the script files in the `./scripts/` folder.**
 
 
