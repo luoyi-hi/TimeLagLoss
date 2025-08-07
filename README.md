@@ -66,11 +66,9 @@ class TimeLagLoss(nn.Module):
 
 The models and datasets used for the validation experiments are derived from the [Time Series Library (TSLib)](https://github.com/thuml/Time-Series-Library). The appendix reports details of 720 experimental results covering 4 prediction horizons, 5 models, 6 loss functions, and 6 datasets.
 
-**Figure 2 shows that the model guided by LagLoss consistently achieves lower MSE values in most models.**
+<p align="center"><b>Table&nbsp;1</b> NSTransformer’s performance (MSE) on different loss functions in combination with LagLoss (mixed ratio is 1:1). </p>
 
-![Figure 2](./src/figure2.png)
-
-<p align="center"><b>Figure&nbsp;2</b> Performance comparison in terms of MSE. Each radar chart illustrates the forecasting performance of 5 backbones under 6 loss functions. The displayed performance is the average over four prediction horizons: {96, 192, 336, 720}. </p>
+![Table 1](./src/table1.png)
 
 
 ### 2.1 Datasets
@@ -90,9 +88,9 @@ We selected six real-world time series datasets, including ETTh1, ETTh2, ETTm1, 
 
 Dataset statistics are summarised in **Table&nbsp;1**.
 
-<p align="center"><b>Table&nbsp;1</b> Statistics of datasets.</p>
+<p align="center"><b>Table&nbsp;2</b> Statistics of datasets.</p>
 
-![Table 1](./src/table1.png)
+![Table 2](./src/table2.png)
 
 ### 2.2 Backbone Models  
 
@@ -111,9 +109,9 @@ Table 2 presents the hyperparameters (batch size, learning rate, number of epoch
 
 
 
-<p align="center"><b>Table&nbsp;2</b> Hyperparameter configuration.</p>
+<p align="center"><b>Table&nbsp;3</b> Hyperparameter configuration.</p>
 
-![Table 2](./src/table2.png)
+![Table 3](./src/table3.png)
 
 
 ### 2.4 Loss Function
@@ -173,6 +171,10 @@ bash scripts/long_term_forecast/Weather_script/TimeMixer.sh
 ## 4. Full results
 
 ### 4.1 Long-term forecasting results  
+
+![Figure 2](./src/figure2.png)
+
+<p align="center"><b>Figure&nbsp;2</b> Performance comparison in terms of MSE. Each radar chart illustrates the forecasting performance of 5 backbones under 6 loss functions. The displayed performance is the average over four prediction horizons: {96, 192, 336, 720}. </p>
 
 ![Figure&nbsp;3](./src/figure3.png)
 
